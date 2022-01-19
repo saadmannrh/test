@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="934.0" style="-fx-background-color: #696969;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/2">
+   <children>
+      <Label  layoutY="-2.0" prefHeight="111.0" prefWidth="934.0" style="-fx-background-color: F0FFFF; -fx-border-style: none; -fx-alignment: center;" text="Sign Up">
+         <font>
+            <Font name="Calibre" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLbl" layoutX="88.0" layoutY="316.0" prefHeight="45.0" prefWidth="105.0" text="User Name">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="88.0" layoutY="361.0" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: F0FFFF;" />
+      <PasswordField fx:id="passwordTextField" layoutX="88.0" layoutY="441.0" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: F0FFFF;" />
+      <Label fx:id="passwordLbl" layoutX="88.0" layoutY="396.0" prefHeight="45.0" prefWidth="105.0" text="Password">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="signUpBtn"  layoutX="88.0" layoutY="492.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: F0FFFF;" text="Sign Up" />
+      <Label alignment="CENTER" layoutX="384.0" layoutY="632.0" style="-fx-alignment: center;" text="Already Have an Account?" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBtn" alignment="CENTER" layoutX="415.0" layoutY="685.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: F0FFFF; -fx-alignment: center;" text="Log In" />
+      <Label fx:id="emailLbl"  layoutX="88.0" layoutY="231.0" prefHeight="45.0" prefWidth="105.0" text="Email">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTextField"  layoutX="88.0" layoutY="276.0" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: F0FFFF;" />
+   </children>
+</AnchorPane>

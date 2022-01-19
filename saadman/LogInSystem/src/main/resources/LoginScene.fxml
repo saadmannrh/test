@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1091.0" style="-fx-background-color: #696969;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginSceneController">
+   <children>
+      <Label fx:id="LogInPageLabel" layoutY="-2.0" prefHeight="81.0" prefWidth="1171.0" style="-fx-background-color: F0FFFF; -fx-border-style: none; -fx-alignment: center;" text="Log In">
+         <font>
+            <Font name="Calibri" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLbl" layoutX="88.0" layoutY="210.0" prefHeight="45.0" prefWidth="105.0" text="User Name">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="88.0" layoutY="264.0" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: F0FFFF;" />
+      <PasswordField fx:id="passwordTextField" layoutX="88.0" layoutY="347.0" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: F0FFFF;" />
+      <Label fx:id="passwordLbl" layoutX="88.0" layoutY="296.0" prefHeight="45.0" prefWidth="105.0" text="Password">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBtn" layoutX="88.0" layoutY="398.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: F0FFFF;" text="Login"  onAction="#setLoginBtn" />
+      <Label layoutX="494.0" layoutY="531.0" style="-fx-alignment: center;" text="Don't have an account?" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="signUpBtn" layoutX="533.0" layoutY="579.0" mnemonicParsing="false" onAction="#setSignUpBtn" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: F0FFFF; -fx-alignment: center;" text="Sign Up" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1101.0" style="-fx-background-color: F0FFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WelcomeSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="944.0" prefHeight="91.0" prefWidth="161.0" style="-fx-background-color: #696969;" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="homeLbl" alignment="CENTER" layoutX="-6.0" prefHeight="91.0" prefWidth="317.0" style="-fx-background-color: #696969;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="profileLbl" alignment="CENTER" layoutX="311.0" onMouseClicked="#setUpProfileLbl" prefHeight="91.0" prefWidth="317.0" style="-fx-background-color: #696969;" text="PROFILE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="inboxLbl" alignment="CENTER" layoutX="628.0" prefHeight="91.0" prefWidth="317.0" style="-fx-background-color: #696969;" text="INBOX" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="308.0" orientation="VERTICAL" prefHeight="91.0" prefWidth="0.0" />
+      <Separator layoutX="622.0" orientation="VERTICAL" prefHeight="91.0" prefWidth="0.0" />
+      <Label layoutX="928.0" layoutY="-1.0" prefHeight="31.0" prefWidth="41.0" style="-fx-background-color: #8c10b2;" textFill="#e1d4d4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLbl" layoutX="967.0" layoutY="-1.0" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: #8c10b2;" textFill="#e1d4d4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="945.0" orientation="VERTICAL" prefHeight="91.0" prefWidth="0.0" />
+      <ImageView fx:id="profilePictureImageView" fitHeight="43.0" fitWidth="60.0" layoutX="1040.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="profilePic" url="@default-profile-picture.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
