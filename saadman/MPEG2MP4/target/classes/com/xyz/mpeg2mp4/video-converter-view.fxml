@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" fx:controller="com.xyz.mpeg2mp4.VideoConverterController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="primaryLbl" layoutX="294.0" layoutY="37.0" text="XYZ Video Converter">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="convertBtn" onAction="#onConvertBtn" layoutX="32.0" layoutY="168.0" mnemonicParsing="false" text="Convert to MP4" />
+<!--      <Button id="avi2Mp4Btn" onAction="#onAvi2Mp4Btn" layoutX="181.0" layoutY="168.0" mnemonicParsing="false" text="AVI To MP4" />-->
+<!--      <Button id="mpeg2Mp4Btn" onAction="#onMpeg2Mp4Btn" layoutX="32.0" layoutY="168.0" mnemonicParsing="false" text="MPEG To MP4" />-->
+      <Separator layoutX="3.0" layoutY="76.0" prefHeight="11.0" prefWidth="828.0" />
+      <Button fx:id="chooseFileBtn" onAction="#onChooseFileBtn" layoutX="32.0" layoutY="116.0" mnemonicParsing="false" text="Choose File (MPEG,AVI)" />
+      <Button fx:id="chooseOutBtn" onAction="#onChooseOutBtn" layoutX="239.0" layoutY="116.0" mnemonicParsing="false" text="Choose Output File Location" />
+      <Label fx:id="selectedFileLabel" layoutX="32.0" layoutY="316.0" text="Filename : ">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      </Label>
+      <Label fx:id="selectedOutputLabel" layoutX="32.0" layoutY="350.0" text="Output Location : ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="convertingLbl" layoutX="120.0" layoutY="600.0" text="Converting ..."  visible="false">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
